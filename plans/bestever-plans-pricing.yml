@@ -1,0 +1,26 @@
+generated: '2026-09-28'
+method: searched
+generator: extract-docs-artifacts.py (local)
+source: https://www.bestever.ai/post/adcreative-ai-pricing
+sources:
+- https://www.bestever.ai/post/adcreative-ai-pricing
+- https://www.bestever.ai/post/adspy-pricing
+name: Bestever pricing
+audience: business-product
+pricing_basis: flat-platform
+plans:
+- name: Starter
+  price_text: $39
+  price: 39
+- name: Professional
+  price_text: $249
+  price: 249
+- name: Ultimate
+  price_text: $599
+  price: 599
+- name: Enterprise
+  price_text: Custom
+- name: AdSpy
+  price_text: $149 per month
+  price: 149
+docs: https://www.bestever.ai/post/adcreative-ai-pricing

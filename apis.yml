@@ -1,23 +1,81 @@
 aid: bestever
+
 name: Bestever
-description: 'Bestever is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+
+image: https://cdn.prod.website-files.com/67195dab60925c0891755157/68a2bf316c01595355299b09_ce4c93b39cedc291974eb28fb75ecb73_AS-HeaderImage-Template.png
+
+description: Bestever is an AI-powered ad generation platform that helps brands create thousands of video and image ad variations at scale. It
+  integrates with major ad platforms, pulls performance data, and uses generative AI to produce on‑brand creative assets, offering tools for competitor
+  analysis, data‑driven optimization, and workflow automation for agencies and marketers.
+
 url: https://raw.githubusercontent.com/api-evangelist/bestever/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-28 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-27'
+
 modified: '2026-09-27'
+
 tags:
 - Company
-apis: []
+- AI
+- Advertising
+- Marketing
+- Creative
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Plans
+  url: plans/bestever-plans-pricing.yml
+- type: Hosts
+  url: hosts/bestever-hosts.yml
+- type: Vendors
+  url: vendors/bestever-vendors.yml
+- type: TermsOfService
+  url: https://www.bestever.ai/terms-use
+- type: PrivacyPolicy
+  url: https://www.bestever.ai/privacy-policy
+- type: Pricing
+  url: https://www.bestever.ai/pricing-plans
+- type: ChangeLog
+  url: https://www.bestever.ai/changelog
+- type: Blog
+  url: https://www.bestever.ai/blog
+- type: DomainSecurity
+  url: security/bestever-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.bestever.ai
+
+apis:
+- name: Bestever API
+  description: AI-powered ad generation platform API
+  humanURL: https://www.bestever.ai/pricing-plans
+  baseURL: null
+  aid: bestever:bestever-api
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: Main site renders via JavaScript, preventing access to machine‑readable API specifications.
+  evidence:
+  - url: https://api.bestever.ai/openapi.json
+    status: 503
+  checked: '2026-09-28'
+x-enrichment:
+  date: '2026-09-28'
+  status: enriched
+  artifacts_added: 6
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local,regulatory=local
